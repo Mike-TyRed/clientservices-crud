@@ -26,7 +26,7 @@ const ShowClients = () => {
   const openModal = (op, id, name, email, phone, address) => {
     setId("");
     setName("");
-    setEmail("")
+    setEmail("");
     setPhone("");
     setAddress("");
     setOperation(op);
@@ -50,7 +50,7 @@ const ShowClients = () => {
     if (name.trim() === "") {
       show_alerta("Escribe el nombre del cliente", "warning");
     } else if (email.trim() === "") {
-        show_alerta("Escribe el correo del cliente", "warning");
+      show_alerta("Escribe el correo del cliente", "warning");
     } else if (phone.trim() === "") {
       show_alerta("Escribe el telefono del cliente", "warning");
     } else if (address === "") {
@@ -171,9 +171,7 @@ const ShowClients = () => {
                         </button>
                         &nbsp;
                         <button
-                          onClick={() =>
-                            deleteClient(client.id, client.name)
-                          }
+                          onClick={() => deleteClient(client.id, client.name)}
                           className="btn btn-danger"
                         >
                           <i className="fa-solid fa-trash"></i>

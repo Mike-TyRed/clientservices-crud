@@ -25,7 +25,7 @@ const ShowServices = () => {
   const openModal = (op, id, name, description, price) => {
     setId("");
     setName("");
-    setDescription("")
+    setDescription("");
     setPrice("");
     setOperation(op);
     if (op === 1) {
@@ -47,10 +47,10 @@ const ShowServices = () => {
     if (name.trim() === "") {
       show_alerta("Escribe el nombre del servicio", "warning");
     } else if (description.trim() === "") {
-        show_alerta("Escribe la descripcion del servicio", "warning");
+      show_alerta("Escribe la descripcion del servicio", "warning");
     } else if (price.trim() === "") {
       show_alerta("Escribe el precio del servicio", "warning");
-    }else {
+    } else {
       if (operation === 1) {
         parametros = {
           name: name.trim(),
@@ -150,7 +150,7 @@ const ShowServices = () => {
                               service.id,
                               service.name,
                               service.description,
-                              service.price,
+                              service.price
                             )
                           }
                           className="btn btn-warning"
